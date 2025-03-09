@@ -1,0 +1,20 @@
+version: 2
+
+updates:
+    -   package-ecosystem: "composer"
+        directory: "/tools"
+        schedule:
+            interval: "weekly"
+        versioning-strategy: increase
+        groups:
+            tools:
+                patterns: [ "*" ]
+
+    -   package-ecosystem: "composer"
+        directory: "/"
+        schedule:
+            interval: "weekly"
+        versioning-strategy: increase
+        groups:
+            symfony:
+                patterns: [ "symfony/*" ]

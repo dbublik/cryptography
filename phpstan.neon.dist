@@ -1,0 +1,21 @@
+includes:
+	- phar://phpstan.phar/conf/bleedingEdge.neon
+
+parameters:
+	level: max
+	tmpDir: var/cache/phpstan
+	paths:
+		- src
+		- tests
+
+	checkTooWideReturnTypesInProtectedAndPublicMethods: true
+	checkUninitializedProperties: true
+	rememberPossiblyImpureFunctionValues: false
+	checkBenevolentUnionTypes: true
+	reportPossiblyNonexistentGeneralArrayOffset: true
+	reportPossiblyNonexistentConstantArrayOffset: true
+	reportAlwaysTrueInLastCondition: true
+	reportAnyTypeWideningInVarTag: true
+	checkMissingOverrideMethodAttribute: true
+	checkMissingCallableSignature: true
+	treatPhpDocTypesAsCertain: false
