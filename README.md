@@ -44,6 +44,8 @@ return function(ContainerConfigurator $container): void {
 };
 ```
 
+Available encryption algorithms: `aes-128-gcm`, `aes-192-gcm` and `aes-256-gcm` (by default).
+
 ### Encrypt:
 
 ```php
