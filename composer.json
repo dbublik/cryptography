@@ -1,6 +1,6 @@
 {
     "name": "dbublik/cryptography",
-    "description": "",
+    "description": "A lightweight cryptography library for string encryption and decryption",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -10,7 +10,8 @@
         }
     ],
     "require": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "ext-openssl": "*"
     },
     "require-dev": {
         "infection/infection": "^0.29.14",
