@@ -15,6 +15,3 @@ updates:
         schedule:
             interval: "weekly"
         versioning-strategy: increase
-        groups:
-            symfony:
-                patterns: [ "symfony/*" ]
